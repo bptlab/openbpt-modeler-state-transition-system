@@ -14,3 +14,132 @@
   background-color: transparent;
   opacity: 1;
 }
+
+.olc-buttonbar {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    background-color: #29487D;
+    border-radius: 15px;
+    box-sizing: border-box;
+    min-width: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.olc-buttonbar > *:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.olc-buttonbar > *:last-child {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.olc-buttonbar > * {
+    background-color: #29487D;
+    border-color: #29487D;
+    color: white;
+    font-size: 16px;
+}
+
+.olc-buttonbar *:focus {
+    border-color:  #29487D !important;
+}
+
+.olc-buttonbar > button {
+    border-style: none;
+}
+
+.olc-select-component {
+    display: inline;
+}
+
+.olc-select-component::after {
+    content: '▼';
+    padding-left: 3px;
+}
+
+.olc-select-component > input {
+    border: none;
+}
+
+.dd-dropdown-menu {
+    background-color: #29487D;
+    border-radius: 15px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dd-dropdown-entry, .dd-dropdown-create-input, .dd-dropdown-title {
+    color: white;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dd-dropdown-title {
+    font-size: 16px;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.dd-dropdown-create-input > input {
+    width: 100%;
+}
+
+.dd-dropdown-entry:not(.unclickable):hover  {
+    color: #29487D;
+    background-color: white;
+}
+
+.dd-dropdown-entry-selected::after {
+  content: "✔️";
+}
+
+.dd-dropdown-multicontainer {
+  display: flex;
+}
+
+.dd-dropdown-multicontainer > .dd-dropdown-menu {
+  display: block;
+  position: relative;
+  width: 50%;
+}
+
+.djs-overlay-classSelection, .djs-overlay-classSelection > div {
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.djs-overlay-classSelection > div > .dd-dropdown-menu:first-child {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.djs-overlay-classSelection > div > .dd-dropdown-menu:last-child {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.dd-dropdown-menu:first-of-type > .dd-dropdown-entry:first-child  {
+    border-top-left-radius: 15px;
+}
+
+.dd-dropdown-menu:first-of-type > .dd-dropdown-entry:last-child  {
+    border-bottom-left-radius: 15px;
+}
+
+.dd-dropdown-menu:last-of-type > .dd-dropdown-entry:first-child  {
+    border-top-right-radius: 15px;
+}
+
+.dd-dropdown-menu:last-of-type > .dd-dropdown-entry:last-child  {
+    border-bottom-right-radius: 15px;
+}
