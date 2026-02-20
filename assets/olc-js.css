@@ -14,6 +14,33 @@
   opacity: 1;
 }
 
+/* center diagram-js palette / context-pad icons */
+.djs-context-pad .entry,
+.djs-palette .entry {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.djs-palette .entry {
+  display: flex;
+}
+
+.djs-context-pad .entry img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+.djs-palette .entry img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+/* OLC selection dropdown */
 .olc-buttonbar {
     position: absolute;
     top: 30px;
@@ -142,28 +169,4 @@
 .dd-dropdown-menu:last-of-type > .dd-dropdown-entry:last-child  {
     border-bottom-right-radius: 15px;
 }
-/* center diagram-js palette / context-pad icons */
-.djs-context-pad .entry,
-.djs-palette .entry {
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
 
-.djs-palette .entry {
-  display: flex;
-}
-
-.djs-context-pad .entry img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  display: block;
-}
-
-.djs-palette .entry img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  display: block;
-}
