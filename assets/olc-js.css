@@ -149,6 +149,9 @@
 
 .dd-dropdown-create-input > input {
     width: 100%;
+    background-color: white;
+    border: solid 1px hsl(225, 10%, 75%);
+    padding-left: 4px;
 }
 
 .dd-dropdown-entry:not(.unclickable):hover  {
