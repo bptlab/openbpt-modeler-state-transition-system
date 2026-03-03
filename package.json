@@ -1,6 +1,6 @@
 {
   "name": "@bptlab/openbpt-modeler-state-transition-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "State Transition System modeler based on diagram-js used in the OpenBPT platform.",
   "repository": {
     "type": "git",
