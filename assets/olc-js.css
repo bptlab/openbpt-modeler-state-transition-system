@@ -80,6 +80,9 @@
     padding: 0;
     flex-shrink: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .olc-buttonbar > button:disabled {
